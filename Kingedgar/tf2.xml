@@ -63,6 +63,11 @@ You can also run multiple servers with only one SteamCMD directory!</Description
       <ContainerDir>/serverdata/serverfiles</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
+    <Volume>
+      <HostDir>/mnt/user/SteamCMD/</HostDir>
+      <ContainerDir>/serverdata</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
   </Data>
   <Environment>
     <Variable>
@@ -110,6 +115,11 @@ You can also run multiple servers with only one SteamCMD directory!</Description
       <Name>GID</Name>
       <Mode/>
     </Variable>
+    <Variable>
+      <Value>/serverdata</Value>
+      <Name>DATA_DIR</Name>
+      <Mode/>
+    </Variable>
   </Environment>
   <Labels/>
   <Config Name="SteamCMD" Target="/serverdata/steamcmd" Default="" Mode="rw" Description="Container Path: /serverdata/steamcmd" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/SteamCMD/steamcmd</Config>
@@ -125,4 +135,6 @@ You can also run multiple servers with only one SteamCMD directory!</Description
   <Config Name="GAME_PORT" Target="GAME_PORT" Default="" Mode="" Description="Container Variable: GAME_PORT" Type="Variable" Display="advanced" Required="true" Mask="false">27015</Config>
   <Config Name="UID" Target="UID" Default="" Mode="" Description="Container Variable: UID" Type="Variable" Display="advanced-hide" Required="true" Mask="false">1000</Config>
   <Config Name="GID" Target="GID" Default="" Mode="" Description="Container Variable: GID" Type="Variable" Display="advanced-hide" Required="true" Mask="false">1002</Config>
+  <Config Name="Host Path 3" Target="/serverdata" Default="" Mode="rw" Description="Container Path: /serverdata" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/SteamCMD/</Config>
+  <Config Name="DATA_DIR" Target="DATA_DIR" Default="" Mode="" Description="Container Variable: DATA_DIR" Type="Variable" Display="always" Required="false" Mask="false">/serverdata</Config>
 </Container>
