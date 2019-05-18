@@ -72,7 +72,7 @@
     </Variable>
     <Variable>
       <Value>/serverdata</Value>
-      <Name>DATA_DIR</Value>
+      <Name>DATA_DIR</Name>
       <Mode/>
     </Variable>
     <Variable>
@@ -97,7 +97,7 @@
     </Variable>
     <Variable>
       <Value>1000</Value>
-      <Name>UID</Value>
+      <Name>UID</Name>
       <Mode/>
     </Variable>
     <Variable>
