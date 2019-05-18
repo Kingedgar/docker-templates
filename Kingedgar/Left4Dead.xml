@@ -12,7 +12,7 @@
   <Overview>This docker installs/updates SteamCMD and installs/updates Left4Dead</Overview>
   <Category>GameServers:</Category>
   <WebUI/>
-  <TemplateURL>https://raw.githubusercontent.com/Kingedgar/docker-templates/Kingedgar/Left4Dead.xml</TemplateURL>
+  <TemplateURL>https://raw.githubusercontent.com/Kingedgar/docker-templates/master/Kingedgar/Left4Dead.xml</TemplateURL>
   <Icon></Icon>
   <ExtraParams>--restart=unless-stopped</ExtraParams>
   <PostArgs/>
