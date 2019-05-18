@@ -7,7 +7,7 @@
   <MyIP/>
   <Shell>bash</Shell>
   <Privleged>false</Privleged>
-  <Support/>
+  <Support></Support>
   <Project>https://www.steampowered.com/</Project>
   <Overview>This docker installs/updates SteamCMD and installs/updates Left4Dead</Overview>
   <Category>GameServers:</Category>
@@ -18,9 +18,9 @@
   <PostArgs/>
   <CPUset/>
   <DateInstalled/>
-  <DonateText/>
-  <DonateLink/>
-  <DonateImg/>
+  <DonateText>Hi</DonateText>
+  <DonateLink>https://www.paypal.me/kingedgar</DonateLink>
+  <DonateImg></DonateImg>
   <Descrtiption>Read Overview</Descrtiption>
   <Networking>
     <Mode>bridge</Mode>
@@ -50,7 +50,7 @@
     </Volume>
     <Volume>
       <HostDir>/mnt/user/SteamCMD</HostDir>
-      <ContainerDir>/serverdata</Container>
+      <ContainerDir>/serverdata</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>
