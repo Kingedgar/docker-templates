@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>Left4Dead</Name>
+  <Name>Left4Dead2</Name>
   <Repository>kingedgar/steamcmd:l4d2</Repository>
   <Registry>https://hub.docker.com/r/kingedgar/steamcmd/</Registry>
   <Network>br0</Network>
