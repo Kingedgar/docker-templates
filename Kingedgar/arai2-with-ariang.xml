@@ -17,13 +17,24 @@
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled></DateInstalled>
+  <DateInstalled>1558827459</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Description/>
   <Networking>
     <Mode>br0</Mode>
-    <Publish/>
+    <Publish>
+      <Port>
+        <HostPort>8989</HostPort>
+        <ContainerPort/>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>6800</HostPort>
+        <ContainerPort/>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
   </Networking>
   <Data>
     <Volume>
@@ -39,7 +50,7 @@
   </Data>
   <Environment>
     <Variable>
-      <Value/>
+      <Value>xsrf3809</Value>
       <Name>SECRET</Name>
       <Mode/>
     </Variable>
@@ -47,5 +58,7 @@
   <Labels/>
   <Config Name="Download" Target="/download" Default="/mnt/user/Downloads/aria2" Mode="rw" Description="/download" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/Downloads/aria2</Config>
   <Config Name="Conf" Target="/config" Default="/mnt/user/docker-containers/aria2-with-ariang" Mode="rw" Description="/config" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/docker-containers/aria2-with-ariang</Config>
-  <Config Name="SECRET" Target="SECRET" Default="" Mode="" Description="SECRET" Type="Variable" Display="always" Required="false" Mask="true"/>
+  <Config Name="SECRET" Target="SECRET" Default="" Mode="" Description="SECRET" Type="Variable" Display="always" Required="false" Mask="true">xsrf3809</Config>
+  <Config Name="WebUI" Target="" Default="8989" Mode="tcp" Description="Container Port: 8989" Type="Port" Display="always" Required="true" Mask="false">8989</Config>
+  <Config Name="aria2-daemon" Target="" Default="6800" Mode="tcp" Description="Container Port: 6800" Type="Port" Display="always" Required="true" Mask="false">6800</Config>
 </Container>
