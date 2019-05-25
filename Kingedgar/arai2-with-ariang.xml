@@ -17,7 +17,7 @@
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1558806891</DateInstalled>
+  <DateInstalled></DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Description/>
@@ -33,7 +33,7 @@
     </Volume>
     <Volume>
       <HostDir>/mnt/user/docker-containers/aria2-with-ariang</HostDir>
-      <ContainerDir>/conf</ContainerDir>
+      <ContainerDir>/config</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>
@@ -46,6 +46,6 @@
   </Environment>
   <Labels/>
   <Config Name="Download" Target="/download" Default="/mnt/user/Downloads/aria2" Mode="rw" Description="/download" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/Downloads/aria2</Config>
-  <Config Name="Conf" Target="/conf" Default="/mnt/user/docker-containers/aria2-with-ariang" Mode="rw" Description="/conf" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/docker-containers/aria2-with-ariang</Config>
+  <Config Name="Conf" Target="/config" Default="/mnt/user/docker-containers/aria2-with-ariang" Mode="rw" Description="/config" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/docker-containers/aria2-with-ariang</Config>
   <Config Name="SECRET" Target="SECRET" Default="" Mode="" Description="SECRET" Type="Variable" Display="always" Required="false" Mask="true"/>
 </Container>
