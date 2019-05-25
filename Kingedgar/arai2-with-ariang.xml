@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>aria2-with-ariang</Name>
-  <Repository>kingedgar/arai2-with-araing:testing-1.10ng</Repository>
+  <Repository>kingedgar/aria2-with-ariang:testing-1.10ng</Repository>
   <Registry>https://cloud.docker.com/repository/docker/kingedgar/aria2-with-ariang</Registry>
   <Network>br0</Network>
   <MyIP/>
