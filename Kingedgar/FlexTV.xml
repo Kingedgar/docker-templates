@@ -3,11 +3,11 @@
   <Name>FlexTV</Name>
   <Repository>kingedgar/FlexTV</Repository>
   <Registry>https://hub.docker.com/r/kingedgar/FlexTV/</Registry>
-  <Network>none</Network>
+  <Network>br0</Network>
   <MyIP/>
-  <Shell>sh</Shell>
+  <Shell>bash</Shell>
   <Privileged>false</Privileged>
-  <Support>https://forums.unraid.net/topic/75588-support-siwats-docker-repository/</Support>
+  <Support></Support>
   <Project>https://github.com/Kingedgar/FlexTV</Project>
   <Overview>&#xD;
     Flex TV. is a web application that interfaces between google Assistant and Plex to allow you to control playback of media using Actions for Google or IFTTT.&#xD;
@@ -18,7 +18,7 @@
   <Category>Tools:</Category>
   <WebUI>http://[IP]:[PORT:80]</WebUI>
   <TemplateURL/>
-  <Icon>https://github.com/d8ahazard/Phlex/raw/master/img/android-icon-144x144.png</Icon>
+  <Icon>https://raw.githubusercontent.com/Kingedgar/FlexTV/master/img/android-icon-384x384.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
@@ -43,7 +43,7 @@
   </Networking>
   <Data>
     <Volume>
-      <HostDir>/mnt/user/docker-containers/Phlex</HostDir>
+      <HostDir>/mnt/user/docker-containers/FlexTV</HostDir>
       <ContainerDir>/config</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
@@ -51,5 +51,5 @@
   <Environment/>
   <Labels/>
   <Config Name="Host Port 1" Target="80" Default="80" Mode="tcp" Description="Container Port: 80" Type="Port" Display="always" Required="true" Mask="false">80</Config>
-  <Config Name="AppData Config Path" Target="/config" Default="/mnt/user/docker-containers/Phlex" Mode="rw" Description="Container Path: /config" Type="Path" Display="advanced-hide" Required="true" Mask="false">/mnt/user/docker-containers/Phlex</Config>
+  <Config Name="AppData Config Path" Target="/config" Default="/mnt/user/docker-containers/FlexTV" Mode="rw" Description="Container Path: /config" Type="Path" Display="advanced-hide" Required="true" Mask="false">/mnt/user/docker-containers/FlexTV</Config>
 </Container>
