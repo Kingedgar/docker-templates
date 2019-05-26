@@ -8,11 +8,11 @@
   <Shell>bash</Shell>
   <Privileged>false</Privileged>
   <Support/>
-  <Project/>
+  <Project>https://github.com/Kingedgar/aria2-with-ariang</Project>
   <Overview/>
-  <Category/>
+  <Category>GameServers:</Category>
   <WebUI>http://[IP]:[PORT:8989]/</WebUI>
-  <TemplateURL/>
+  <TemplateURL>https://raw.githubusercontent.com/Kingedgar/docker-templates/master/Kingedgar/aria2-with-ariang.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/Kingedgar/docker-templates/master/Kingedgar/images/AriaNg.png</Icon>
   <ExtraParams/>
   <PostArgs/>
@@ -20,7 +20,7 @@
   <DateInstalled></DateInstalled>
   <DonateText>Please Consider a donation if you enjoy my work!</DonateText>
   <DonateLink>https://paypal.me/edgar2177</DonateLink>
-  <Description/>
+  <Description>Aria 2 daemon with AriaNg webui</Description>
   <Networking>
     <Mode>br0</Mode>
     <Publish>
