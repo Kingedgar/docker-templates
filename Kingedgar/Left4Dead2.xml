@@ -13,7 +13,7 @@
   <Category>GameServers:</Category>
   <WebUI/>
   <TemplateURL>https://raw.githubusercontent.com/Kingedgar/docker-templates/master/Kingedgar/Left4Dead2.xml</TemplateURL>
-  <Icon></Icon>
+  <Icon>https://raw.githubusercontent.com/Kingedgar/docker-templates/master/Kingedgar/images/l4d.png</Icon>
   <ExtraParams>--restart=unless-stopped</ExtraParams>
   <PostArgs/>
   <CPUset/>
