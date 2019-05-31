@@ -1,0 +1,102 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>binhex-plexpass</Name>
+  <Repository>binhex/arch-plexpass</Repository>
+  <Registry>https://registry.hub.docker.com/u/binhex/arch-plexpass/</Registry>
+  <Network>host</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support>http://lime-technology.com/forum/index.php?topic=45845.0</Support>
+  <Project>https://plex.tv/</Project>
+  <Overview>&#xD;
+    The Plex Media Server enriches your life by organizing all your personal media, presenting it beautifully and streaming it to all of your devices. It's easy to use, it's awesome, and it's free!. Please note you WILL require an active Plex Pass account, if you don't have a Plex Pass account then please use the free version, binhex-plex.&#xD;
+  </Overview>
+  <Category>MediaApp:Video MediaApp:Music MediaApp:Photos MediaServer:Video MediaServer:Music MediaServer:Photos</Category>
+  <WebUI>http://[IP]:[PORT:32400]/web/index.html</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/plexpass.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/plex-icon.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1559268045</DateInstalled>
+  <DonateText>If you appreciate my work, then please consider buying me a beer :D</DonateText>
+  <DonateLink>https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;amp;hosted_button_id=MM5E27UX6AUU4</DonateLink>
+  <Description>&#xD;
+    The Plex Media Server enriches your life by organizing all your personal media, presenting it beautifully and streaming it to all of your devices. It's easy to use, it's awesome, and it's free!. Please note you WILL require an active Plex Pass account, if you don't have a Plex Pass account then please use the free version, binhex-plex.&#xD;
+  </Description>
+  <Networking>
+    <Mode>host</Mode>
+    <Publish/>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/disks/Kodi_Drive/Multimedia/</HostDir>
+      <ContainerDir>/media</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/etc/localtime</HostDir>
+      <ContainerDir>/etc/localtime</ContainerDir>
+      <Mode>ro</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/cache/transcode/</HostDir>
+      <ContainerDir>/config/transcode</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/TV/</HostDir>
+      <ContainerDir>/TV</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/Movies</HostDir>
+      <ContainerDir>/Movies</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/Music</HostDir>
+      <ContainerDir>/Music</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/docker-containers/binhex-plexpass</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value>/config/transcode</Value>
+      <Name>TRANS_DIR</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>002</Value>
+      <Name>UMASK</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>1000</Value>
+      <Name>PUID</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>1002</Value>
+      <Name>PGID</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="Host Path 2" Target="/media" Default="/mnt/user" Mode="rw" Description="Container Path: /media" Type="Path" Display="always" Required="true" Mask="false">/mnt/disks/Kodi_Drive/Multimedia/</Config>
+  <Config Name="Key 1" Target="TRANS_DIR" Default="/config/transcode" Mode="" Description="Container Variable: TRANS_DIR" Type="Variable" Display="always" Required="false" Mask="false">/config/transcode</Config>
+  <Config Name="Key 2" Target="UMASK" Default="000" Mode="" Description="Container Variable: UMASK" Type="Variable" Display="always" Required="false" Mask="false">002</Config>
+  <Config Name="Key 3" Target="PUID" Default="99" Mode="" Description="Container Variable: PUID" Type="Variable" Display="always" Required="false" Mask="false">1000</Config>
+  <Config Name="Key 4" Target="PGID" Default="100" Mode="" Description="Container Variable: PGID" Type="Variable" Display="always" Required="false" Mask="false">1002</Config>
+  <Config Name="localtime" Target="/etc/localtime" Default="" Mode="ro" Description="Container Path: /etc/localtime" Type="Path" Display="always" Required="false" Mask="false">/etc/localtime</Config>
+  <Config Name="transcode" Target="/config/transcode" Default="" Mode="rw" Description="Container Path: /config/transcode" Type="Path" Display="always" Required="false" Mask="false">/mnt/cache/transcode/</Config>
+  <Config Name="Media2" Target="/TV" Default="" Mode="rw" Description="Container Path: /TV" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/TV/</Config>
+  <Config Name="Movies" Target="/Movies" Default="" Mode="rw" Description="Container Path: /Movies" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/Movies</Config>
+  <Config Name="Music" Target="/Music" Default="/mnt/user/Music" Mode="rw" Description="Container Path: /Music" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/Music</Config>
+  <Config Name="AppData Config Path" Target="/config" Default="/mnt/user/docker-containers/binhex-plexpass" Mode="rw" Description="Container Path: /config" Type="Path" Display="advanced-hide" Required="true" Mask="false">/mnt/user/docker-containers/binhex-plexpass</Config>
